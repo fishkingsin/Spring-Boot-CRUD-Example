@@ -1,5 +1,31 @@
 # Spring Boot PostgreSQL CRUD Example
 
+## Project Overview
+
+**Tech Stack:**  
+- Spring Boot 3.x  
+- Java 17  
+- PostgreSQL  
+- Spring Data JPA  
+- Maven  
+- Podman (containerization)  
+- H2 (for test isolation)  
+- JUnit 5, MockMvc, curl, jq
+
+**Key Highlights:**  
+- Clean three-layer architecture (Controller, Service, Repository)
+- Uses Java record for DTOs
+- Containerized with Podman for both app and database
+- Includes automated integration tests and runtime curl test script
+- Example output and Podman usage documented in README
+- Pay attention to:  
+  - Correct DB host in container networking  
+  - Test isolation with H2  
+  - Use of jq for readable API output  
+  - Reference links and Copilot GPT-4.1 assistance
+
+
+
 
 ## Runtime API Test Script
 
