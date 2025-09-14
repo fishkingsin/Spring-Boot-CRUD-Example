@@ -1,5 +1,8 @@
 #!/bin/sh
-hostname=$1
+hostname=$1 # fallback to localhost if not provided
+if [ -z "$hostname" ]; then
+  hostname="localhost"
+fi
 echo "Creating a product..."
 curl -s -X POST http://${hostname}:8888/api/products \
   -H "Content-Type: application/json" \
