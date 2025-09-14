@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+san.cnf
+springboot-crud.tar
